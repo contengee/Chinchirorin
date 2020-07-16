@@ -26,18 +26,17 @@ Partial Class Form1
         Me.lblPlayerMoney = New System.Windows.Forms.Label()
         Me.lblPlayerYaku = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.picSai3 = New System.Windows.Forms.PictureBox()
+        Me.picSai2 = New System.Windows.Forms.PictureBox()
+        Me.picSai1 = New System.Windows.Forms.PictureBox()
         Me.lblYakuName = New System.Windows.Forms.Label()
         Me.lblComputerMoney = New System.Windows.Forms.Label()
         Me.lblComputerYaku = New System.Windows.Forms.Label()
         Me.lblMessage = New System.Windows.Forms.Label()
-        Me.picSai1 = New System.Windows.Forms.PictureBox()
-        Me.picSai2 = New System.Windows.Forms.PictureBox()
-        Me.picSai3 = New System.Windows.Forms.PictureBox()
         Me.txtBet = New System.Windows.Forms.TextBox()
         Me.btnPlay = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -46,16 +45,16 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
-        CType(Me.picSai1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picSai2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picSai3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picSai2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picSai1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblPlayerMoney
         '
         Me.lblPlayerMoney.AutoSize = True
         Me.lblPlayerMoney.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.lblPlayerMoney.Location = New System.Drawing.Point(21, 128)
+        Me.lblPlayerMoney.Location = New System.Drawing.Point(21, 111)
         Me.lblPlayerMoney.Name = "lblPlayerMoney"
         Me.lblPlayerMoney.Size = New System.Drawing.Size(66, 19)
         Me.lblPlayerMoney.TabIndex = 0
@@ -66,7 +65,7 @@ Partial Class Form1
         '
         Me.lblPlayerYaku.AutoSize = True
         Me.lblPlayerYaku.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.lblPlayerYaku.Location = New System.Drawing.Point(21, 195)
+        Me.lblPlayerYaku.Location = New System.Drawing.Point(21, 176)
         Me.lblPlayerYaku.Name = "lblPlayerYaku"
         Me.lblPlayerYaku.Size = New System.Drawing.Size(66, 19)
         Me.lblPlayerYaku.TabIndex = 1
@@ -84,22 +83,47 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(389, 225)
         Me.Panel1.TabIndex = 2
         '
+        'picSai3
+        '
+        Me.picSai3.Location = New System.Drawing.Point(274, 24)
+        Me.picSai3.Name = "picSai3"
+        Me.picSai3.Size = New System.Drawing.Size(84, 84)
+        Me.picSai3.TabIndex = 1
+        Me.picSai3.TabStop = False
+        '
+        'picSai2
+        '
+        Me.picSai2.Location = New System.Drawing.Point(157, 24)
+        Me.picSai2.Name = "picSai2"
+        Me.picSai2.Size = New System.Drawing.Size(84, 84)
+        Me.picSai2.TabIndex = 1
+        Me.picSai2.TabStop = False
+        '
+        'picSai1
+        '
+        Me.picSai1.Location = New System.Drawing.Point(36, 24)
+        Me.picSai1.Name = "picSai1"
+        Me.picSai1.Size = New System.Drawing.Size(84, 84)
+        Me.picSai1.TabIndex = 1
+        Me.picSai1.TabStop = False
+        '
         'lblYakuName
         '
         Me.lblYakuName.AutoSize = True
-        Me.lblYakuName.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.lblYakuName.Location = New System.Drawing.Point(166, 148)
+        Me.lblYakuName.Font = New System.Drawing.Font("HG正楷書体-PRO", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.lblYakuName.Location = New System.Drawing.Point(147, 146)
         Me.lblYakuName.Name = "lblYakuName"
-        Me.lblYakuName.Size = New System.Drawing.Size(66, 19)
+        Me.lblYakuName.Size = New System.Drawing.Size(94, 27)
         Me.lblYakuName.TabIndex = 0
         Me.lblYakuName.Text = "Label1"
+        Me.lblYakuName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblComputerMoney
         '
         Me.lblComputerMoney.AutoSize = True
         Me.lblComputerMoney.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
         Me.lblComputerMoney.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblComputerMoney.Location = New System.Drawing.Point(504, 128)
+        Me.lblComputerMoney.Location = New System.Drawing.Point(504, 111)
         Me.lblComputerMoney.Name = "lblComputerMoney"
         Me.lblComputerMoney.Size = New System.Drawing.Size(66, 19)
         Me.lblComputerMoney.TabIndex = 3
@@ -110,7 +134,7 @@ Partial Class Form1
         '
         Me.lblComputerYaku.AutoSize = True
         Me.lblComputerYaku.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.lblComputerYaku.Location = New System.Drawing.Point(504, 195)
+        Me.lblComputerYaku.Location = New System.Drawing.Point(504, 178)
         Me.lblComputerYaku.Name = "lblComputerYaku"
         Me.lblComputerYaku.Size = New System.Drawing.Size(66, 19)
         Me.lblComputerYaku.TabIndex = 4
@@ -120,36 +144,12 @@ Partial Class Form1
         '
         Me.lblMessage.AutoSize = True
         Me.lblMessage.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.lblMessage.Location = New System.Drawing.Point(278, 270)
+        Me.lblMessage.Location = New System.Drawing.Point(238, 267)
         Me.lblMessage.Name = "lblMessage"
         Me.lblMessage.Size = New System.Drawing.Size(66, 19)
         Me.lblMessage.TabIndex = 5
         Me.lblMessage.Text = "Label1"
-        Me.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'picSai1
-        '
-        Me.picSai1.Location = New System.Drawing.Point(36, 24)
-        Me.picSai1.Name = "picSai1"
-        Me.picSai1.Size = New System.Drawing.Size(84, 84)
-        Me.picSai1.TabIndex = 1
-        Me.picSai1.TabStop = False
-        '
-        'picSai2
-        '
-        Me.picSai2.Location = New System.Drawing.Point(157, 24)
-        Me.picSai2.Name = "picSai2"
-        Me.picSai2.Size = New System.Drawing.Size(84, 84)
-        Me.picSai2.TabIndex = 1
-        Me.picSai2.TabStop = False
-        '
-        'picSai3
-        '
-        Me.picSai3.Location = New System.Drawing.Point(274, 24)
-        Me.picSai3.Name = "picSai3"
-        Me.picSai3.Size = New System.Drawing.Size(84, 84)
-        Me.picSai3.TabIndex = 1
-        Me.picSai3.TabStop = False
+        Me.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'txtBet
         '
@@ -192,23 +192,12 @@ Partial Class Form1
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "CPU　  "
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Label3.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.Label3.Location = New System.Drawing.Point(21, 166)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 19)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "役　　　"
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label4.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.Label4.Location = New System.Drawing.Point(504, 166)
+        Me.Label4.Location = New System.Drawing.Point(504, 149)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(85, 19)
         Me.Label4.TabIndex = 8
@@ -230,7 +219,7 @@ Partial Class Form1
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label6.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.Label6.Location = New System.Drawing.Point(21, 166)
+        Me.Label6.Location = New System.Drawing.Point(21, 149)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(85, 19)
         Me.Label6.TabIndex = 8
@@ -252,7 +241,7 @@ Partial Class Form1
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label8.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.Label8.Location = New System.Drawing.Point(21, 100)
+        Me.Label8.Location = New System.Drawing.Point(21, 83)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(85, 19)
         Me.Label8.TabIndex = 8
@@ -263,7 +252,7 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label9.Font = New System.Drawing.Font("HG正楷書体-PRO", 14.25!)
-        Me.Label9.Location = New System.Drawing.Point(504, 100)
+        Me.Label9.Location = New System.Drawing.Point(504, 83)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(85, 19)
         Me.Label9.TabIndex = 8
@@ -285,7 +274,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.txtBet)
@@ -299,9 +287,9 @@ Partial Class Form1
         Me.Text = "ちんちろりん"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.picSai1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picSai2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picSai3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picSai2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picSai1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -321,7 +309,6 @@ Partial Class Form1
     Friend WithEvents btnPlay As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
